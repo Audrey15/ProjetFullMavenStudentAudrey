@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14697122067640" configfile="/SimpleMavenWar/src/main/webapp/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14697122067640" configfile="/SimpleFullMavenWarInjectJPAAudrey/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" id="pf14806917081010" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14806917081011 pf14806917081012 pf14806917081013" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="add-student-form.xhtml" id="pf14806917081024" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14806917081011" path="/add-student-form.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="list-students.xhtml" id="pf14806917081025" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14806917081012" path="/list-students.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="update-student-form.xhtml" id="pf14806917081026" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf14806917081013" path="/update-student-form.xhtml"/>
+  <links id="pf14806917081011" target="pf14806917081024" source="pf14806917081010" outcome="add-student-form" redirect="true"/>
+  <links id="pf14806917081012" target="pf14806917081025" source="pf14806917081010" outcome="list-students" redirect="true"/>
+  <links id="pf14806917081013" target="pf14806917081026" source="pf14806917081010" outcome="update-student-form"/>
+</pageflow:Pageflow>

@@ -8,16 +8,17 @@
 <title>Login</title>
 </head>
 <body>
-
+<f:view locale="#{languageController.locale}"/>
 	<form action="j_security_check">
 		<p>
 			login <input type="text" name="j_username" size="25" />
 		</p>
 		<p>
-			password <input type="text" name="j_password" size="25" /> <input
-				type="submit" value="Connexion" />
+			password <input type="text" name="j_password" size="25" /> 
 		</p>
-		
+		<p> <input
+				type="submit" value="Connexion" />
+				</p>
 	</form>
 
 
